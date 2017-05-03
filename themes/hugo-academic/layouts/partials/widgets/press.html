@@ -1,0 +1,35 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $presses_len := len (where $.Data.Pages "Type" "press") }}
+
+<!-- Presses widget -->
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+    {{ if gt $presses_len $page.Params.count }}
+    <p class="view-all">
+      <a href="{{ "/press/" | relLangURL }}">
+        {{ i18n "more_presses" | markdownify }}
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    {{ end }}
+  </div>
+  <div class="col-xs-12 col-md-8">
+    {{ with $page.Content }}<p>{{ . | markdownify }}</p>{{ end }}
+
+    {{ if $page.Params.detailed_list }}
+    {{ range first $page.Params.count (where $.Data.Pages "Type" "press") }}
+    {{ partial "press_li_detailed" . }}
+    {{ end }}
+    {{ else }}
+    <ul class="fa-ul">
+      {{ range first $page.Params.count (where $.Data.Pages "Type" "press") }}
+      {{ partial "press_li_simple" . }}
+      {{ end }}
+    </ul>
+    {{ end }}
+
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<li itemscope itemtype="http://schema.org/CreativeWork" style="margin: 12pt; linespacing: 75%">
+    {{ if .Params.fa_icon }}
+    <i class="fa-li fa fa-{{ .Params.fa_icon }} pub-icon" aria-hidden="true"></i>
+    {{ else }}
+    <i class="fa-li fa fa-comment-o pub-icon" aria-hidden="true"></i>
+    {{ end }}
+  <span itemprop="name"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+  <br>
+
+    <span>{{ .Date.Format $.Site.Params.date_format }}</span>
+    <br>
+    {{ if .Params.outlet_short }}
+        <span style="color: #808080">{{ .Params.outlet_short | markdownify }}</span>
+    {{ else if .Params.outlet }}
+        <span style="color: #808080">{{ .Params.outlet | markdownify }}</span>
+    {{ end }}
+</li>

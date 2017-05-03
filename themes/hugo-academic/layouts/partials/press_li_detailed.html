@@ -1,0 +1,29 @@
+<div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    <h3 class="article-title" itemprop="name">
+      <a href="{{ .Permalink }}" itemprop="url">{{ .Title }}</a>
+    </h3>
+
+    <div class="press-abstract" itemprop="text">
+      {{ if .Params.abstract_short }}
+      {{ .Params.abstract_short }}
+      {{ else }}
+      {{ .Params.abstract }}
+      {{ end }}
+    </div>
+
+    <div class="press-outlet">
+      {{ if .Params.outlet }}
+        {{ .Params.outlet | markdownify }}
+      {{ else if .Params.outlet_short }}
+        {{ .Params.outlet_short | markdownify }}
+      {{ end }}
+    </div>
+
+    <div class="press-links">
+      {{ partial "press_links" (dict "content" . "is_list" 1) }}
+    </div>
+
+  </div>
+</div>
