@@ -41,6 +41,11 @@ defaultContentLanguageInSubdir = false
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
   math = true
+  
+  
+  # Do not make the url/path to lowercase
+  disablePathToLower = true
+  
 
   # Highlight.js options
   #   highlight
@@ -186,7 +191,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "CV"
-  url = "/pdf/Nell_CV.pdf"
+  url = "./pdf/Nell_CV.pdf"
   weight = 6
 
 
