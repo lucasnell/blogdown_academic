@@ -12,7 +12,7 @@ title = "Fallen nestlings and regurgitant as mechanisms of nutrient transfer fro
 url_code = ""
 url_dataset = ""
 url_pdf = "https://goo.gl/3W3QU6"
-url_project = "project/alligators-birds/"
+url_project = ""
 url_slides = ""
 url_video = ""
 

@@ -12,7 +12,7 @@ title = "Presence of breeding birds improves body condition for a crocodilian ne
 url_code = ""
 url_dataset = ""
 url_pdf = "http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0149572&type=printable"
-url_project = "project/alligators-birds/"
+url_project = ""
 url_slides = ""
 url_video = ""
 
