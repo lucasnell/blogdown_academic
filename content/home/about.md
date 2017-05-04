@@ -47,5 +47,5 @@ structure and evolutionary outcomes—and how they themselves are shaped by natu
 selection. I seek to pursue these questions using a combination of computational,
 experimental, and comparative field approaches.
 
-Please visit my [Research](/research) page for more information on my previous research,
-or click the icons below to visit my other pages.
+Please see below for more information on my previous research,
+or click the icons on the left to visit my other pages.
