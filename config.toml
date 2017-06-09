@@ -1,4 +1,4 @@
-baseurl = "http://lucasnell.com"
+baseurl = ""
 title = "Lucas A. Nell"
 copyright = "&copy; 2017 Lucas A. Nell"
 theme = "hugo-academic"
