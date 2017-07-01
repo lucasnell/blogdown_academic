@@ -37,9 +37,9 @@ weight = 1
 
 # About
 
-I'm a PhD student in [Zoology](http://zoology.wisc.edu/) at the
-[University of Wisconsin–Madison](http://www.wisc.edu/), in
-[Dr. Anthony Ives'](http://ives.labs.wisc.edu) lab.
+I'm a PhD student in the [Department of Integrative Biology](http://ibio.wisc.edu/) 
+at the [University of Wisconsin–Madison](http://www.wisc.edu/). My advisor is 
+[Dr. Anthony Ives](http://ives.labs.wisc.edu).
 
 
 I am most fascinated by how complex networks of species interactions drive community
